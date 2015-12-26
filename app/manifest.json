@@ -11,7 +11,74 @@
   "icons" : {},
   "refreshIntervalMinutes" : 20,
   "resources" : [{}],
-  "pages" : [{}],
+  "pages" : [
+    {
+      "layout" : "MSBand_SingleMetric",
+      "condition" : "true",
+      "textBindings" : [
+        {
+          "elementId" : "1",
+          "value" : "{{uUsername}}"
+        },
+        {
+          "elementId" : "2",
+          "value" : "{{uStatus}}"
+        }
+      ]
+    },
+    {
+      "layout" : "MSBand_SingleMetricWithSecondary",
+      "condition" : "true",
+      "textBindings" : [
+        {
+          "elementId" : "11",
+          "value" : "{{uLastGamePlayedTitle}}"
+        },
+        {
+          "elementId" : "12",
+          "value" : "{{uLastGamePlayedDate}}"
+        },
+        {
+          "elementId" : "21",
+          "value" : "icons/game.png"
+        },
+        {
+          "elementId" : "22",
+          "value" : "{{uLastGamePlayedTime}} Hrs"
+        }
+      ]
+    },
+    {
+      "layout" : "MSBand_MetricsWithIcons",
+      "condition" : "true",
+      "textBindings" : [
+        {
+          "elementId" : "11",
+          "value" : "{{f1StatusImg}}"
+        },
+        {
+          "elementId" : "12",
+          "value" : "{{f1UserName}}"
+        },
+        {
+          "elementId" : "21",
+          "value" : "{{f2StatusImg}}"
+        },
+        {
+          "elementId" : "22",
+          "value" : "{{f2UserName}}"
+        },
+        {
+          "elementId" : "31",
+          "value" : "{{f3StatusImg}}"
+        },
+        {
+          "elementId" : "32",
+          "value" : "{{f3UserName}}"
+        }
+      ]
+    }
+  ],
   "notifications" : [
     {
       "conditions" : "{{changeOnlineState}} == \"true\"",
