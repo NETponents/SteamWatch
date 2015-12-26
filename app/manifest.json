@@ -10,7 +10,31 @@
   "badgeIcon" : {},
   "icons" : {},
   "refreshIntervalMinutes" : 20,
-  "resources" : [{}],
+  "resources" : [
+    {
+      "url" : "http://steamwatch.herokuapp.com/status?id=0",
+      "style" : "Simple",
+      "content" : {
+        "uUsername" : "me.username",
+        "uStatus" : "me.status",
+        "uLastGamePlayedTitle" : "me.lastGame.title",
+        "uLastGamePlayedDate" : "me.lastGame.date",
+        "uLastGamePlayedTime" : "me.lastGame.playTime",
+        "f1UserName" : "friends[0].username",
+        "f1StatusImg" : "friends[0].statImg",
+        "f2UserName" : "friends[1].username",
+        "f2StatusImg" : "friends[1].statImg",
+        "f3UserName" : "friends[2].username",
+        "f3StatusImg" : "friends[2].statImg",
+        "changedOnlineState" : "notify.online.hasChanged",
+        "changedGameState" : "notify.game.hasChanged",
+        "onlineFriends" : "friendsStat.online.count",
+        "gameFriends" : "friendsStat.ingame.count",
+        "onlineFriendsString" : "friendsStat.online.list",
+        "gameFriendsString" : "friendsStat.ingame.list"
+      }
+    }
+  ],
   "pages" : [
     {
       "layout" : "MSBand_SingleMetric",
@@ -75,6 +99,20 @@
         {
           "elementId" : "32",
           "value" : "{{f3UserName}}"
+        }
+      ]
+    },
+    {
+      "layout" : "MSBand_ScrollingText",
+      "condition" : "true",
+      "textBindings" : [
+        {
+          "elementId" : "1",
+          "value" : "About"
+        },
+        {
+          "elementId" : "2",
+          "value" : "Steam is a registered trademark of Valve. For help, visit http://steamwatch.herokuapp.com"
         }
       ]
     }
