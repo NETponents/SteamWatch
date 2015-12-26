@@ -12,5 +12,16 @@
   "refreshIntervalMinutes" : 20,
   "resources" : [{}],
   "pages" : [{}],
-  "notifications" : [{}]
+  "notifications" : [
+    {
+      "conditions" : "{{changeOnlineState}} == \"true\"",
+      "title" : "{{onlineFriends}} friends online",
+      "body" : "{{onlineFriendsString}}"
+    },
+    {
+      "conditions" : "{{changeGameState}} == \"true\"",
+      "title" : "{{gameFriends}} friends in-game",
+      "body" : "{{gameFriendsString}}"
+    }
+  ]
 }
