@@ -1,3 +1,16 @@
 {
-  
+  "manifestVersion" : 1,
+  "name" : "SteamWatch",
+  "description" : "Get updates from Valve's Steam network",
+  "version" : 1,
+  "versionString" : "1.0a",
+  "author" : "Joshua Zenn",
+  "contactEmail" : "null",
+  "tileIcon" : {},
+  "badgeIcon" : {},
+  "icons" : {},
+  "refreshIntervalMinutes" : 20,
+  "resources" : [{}],
+  "pages" : [{}],
+  "notifications" : [{}]
 }
