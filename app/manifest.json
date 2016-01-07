@@ -12,7 +12,7 @@
   "refreshIntervalMinutes" : 20,
   "resources" : [
     {
-      "url" : "http://steamwatch.herokuapp.com/status/0/1",
+      "url" : "http://steamwatch.herokuapp.com/api/v1/player/info/XXXXXXXXX",
       "style" : "Simple",
       "content" : {
         "uUsername" : "me.username",
