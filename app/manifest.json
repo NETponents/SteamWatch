@@ -5,12 +5,11 @@
   "version" : 1,
   "versionString" : "1.0a",
   "author" : "Joshua Zenn",
-  "contactEmail" : "null",
+  "contactEmail" : "wordman05@gmail.com",
   "tileIcon" : {
     "46" : "icons/appico.png"
   },
-  "icons" : {},
-  "refreshIntervalMinutes" : 20,
+  "refreshIntervalMinutes" : 60,
   "resources" : [
     {
       "url" : "http://steamwatch.herokuapp.com/api/v1/player/info/XXXXXXXXX",
