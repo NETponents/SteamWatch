@@ -55,50 +55,6 @@
       ]
     },
     {
-      "layout" : "MSBand_SingleMetric",
-      "condition" : "true",
-      "textBindings" : [
-        {
-          "elementId" : "1",
-          "value" : "{{uLastGamePlayedTitle}} - {{uLastGamePlayedDate}}"
-        },
-        {
-          "elementId" : "2",
-          "value" : {{uLastGamePlayedTime}}
-        }
-      ]
-    },
-    {
-      "layout" : "MSBand_MetricsWithIcons",
-      "condition" : "true",
-      "textBindings" : [
-        {
-          "elementId" : "11",
-          "value" : "icons/offline.png"
-        },
-        {
-          "elementId" : "12",
-          "value" : "{{f1UserName}}"
-        },
-        {
-          "elementId" : "21",
-          "value" : "icons/offline.png"
-        },
-        {
-          "elementId" : "22",
-          "value" : "{{f2UserName}}"
-        },
-        {
-          "elementId" : "31",
-          "value" : "icons/offline.png"
-        },
-        {
-          "elementId" : "32",
-          "value" : "{{f3UserName}}"
-        }
-      ]
-    },
-    {
       "layout" : "MSBand_ScrollingText",
       "condition" : "true",
       "textBindings" : [
