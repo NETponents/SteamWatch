@@ -6,8 +6,9 @@
   "versionString" : "1.0a",
   "author" : "Joshua Zenn",
   "contactEmail" : "null",
-  "tileIcon" : {},
-  "badgeIcon" : {},
+  "tileIcon" : {
+    "46" : "icons/appico.png"
+  },
   "icons" : {},
   "refreshIntervalMinutes" : 20,
   "resources" : [
