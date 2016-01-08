@@ -37,7 +37,7 @@
   ],
   "pages" : [
     {
-      "layout" : "MSBand_SingleMetric",
+      "layout" : "MSBand_NoScrollingText",
       "condition" : "true",
       "textBindings" : [
         {
@@ -47,28 +47,24 @@
         {
           "elementId" : "2",
           "value" : "{{uStatus}}"
+        },
+        {
+          "elementId" : "3",
+          "value" : "{{uLastGamePlayedTitle}}"
         }
       ]
     },
     {
-      "layout" : "MSBand_SingleMetricWithSecondary",
+      "layout" : "MSBand_SingleMetric",
       "condition" : "true",
       "textBindings" : [
         {
-          "elementId" : "11",
-          "value" : "{{uLastGamePlayedTitle}}"
+          "elementId" : "1",
+          "value" : "{{uLastGamePlayedTitle}} - {{uLastGamePlayedDate}}"
         },
         {
-          "elementId" : "12",
-          "value" : "{{uLastGamePlayedDate}}"
-        },
-        {
-          "elementId" : "21",
-          "value" : "icons/game.png"
-        },
-        {
-          "elementId" : "22",
-          "value" : "{{uLastGamePlayedTime}} Hrs"
+          "elementId" : "2",
+          "value" : {{uLastGamePlayedTime}}
         }
       ]
     },
@@ -78,7 +74,7 @@
       "textBindings" : [
         {
           "elementId" : "11",
-          "value" : "{{f1StatusImg}}"
+          "value" : "icons/offline.png"
         },
         {
           "elementId" : "12",
@@ -86,7 +82,7 @@
         },
         {
           "elementId" : "21",
-          "value" : "{{f2StatusImg}}"
+          "value" : "icons/offline.png"
         },
         {
           "elementId" : "22",
@@ -94,7 +90,7 @@
         },
         {
           "elementId" : "31",
-          "value" : "{{f3StatusImg}}"
+          "value" : "icons/offline.png"
         },
         {
           "elementId" : "32",
@@ -115,18 +111,6 @@
           "value" : "Steam is a registered trademark of Valve. For help, visit http://steamwatch.herokuapp.com"
         }
       ]
-    }
-  ],
-  "notifications" : [
-    {
-      "conditions" : "{{changeOnlineState}} == \"true\"",
-      "title" : "{{onlineFriends}} friends online",
-      "body" : "{{onlineFriendsString}}"
-    },
-    {
-      "conditions" : "{{changeGameState}} == \"true\"",
-      "title" : "{{gameFriends}} friends in-game",
-      "body" : "{{gameFriendsString}}"
     }
   ]
 }
